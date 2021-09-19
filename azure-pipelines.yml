@@ -14,7 +14,7 @@ parameters:
     displayName: success or failure
     type: boolean
     default: false
-    values:
+   
 
 jobs:
 - job: work
@@ -25,7 +25,7 @@ jobs:
 
 
 steps:
-- publish:
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
