@@ -19,7 +19,6 @@ parameters:
 
 steps: 
 - script: echo Hello Python!!
-- publish: PublishBuildArtifacts@1
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
