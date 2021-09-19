@@ -22,10 +22,7 @@ jobs:
   - script: echo Hello Python!!
     displayName: Run This Script
    
-
-
-steps:
-
+steps: 
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
