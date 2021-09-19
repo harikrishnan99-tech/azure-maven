@@ -16,13 +16,10 @@ parameters:
     default: false
    
 
-jobs:
-- job: work
-  steps:
-  - script: echo Hello Python!!
-    displayName: Run This Script
-   
+
 steps: 
+- script: echo Hello Python!!
+- publish: PublishBuildArtifacts@1
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
